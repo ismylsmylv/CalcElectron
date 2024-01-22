@@ -1,0 +1,102 @@
+body {
+    background-color: #252525;
+}
+
+.calc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    background-color: white;
+    width: max-content;
+    height: max-content;
+    margin: auto;
+    border-radius: 5px;
+
+    .heading {
+        text-align: left;
+        font-weight: 700;
+        font-size: 30px;
+        align-self: flex-start;
+        margin: 10px 0;
+    }
+
+    .result {
+        width: 100%;
+        border: 1px solid #cccccc;
+        padding: 20px;
+        padding-right: 10px;
+        border-radius: 5px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .inputs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 10px;
+
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 10px;
+            margin-bottom: 10px;
+
+            .number {
+                background-color: gray;
+                color: white;
+                font-size: 16px;
+                cursor: pointer;
+                font-weight: 500;
+                border: none;
+                border-radius: 5px;
+                height: 50px;
+                width: 50px;
+            }
+
+            .action {
+                background-color: orange;
+                color: white;
+                font-size: 16px;
+                cursor: pointer;
+                font-weight: 500;
+                border: none;
+                border-radius: 5px;
+                height: 50px;
+                width: 50px;
+            }
+
+            .equal {
+                width: 110px;
+                background-color: royalblue;
+            }
+
+
+        }
+    }
+
+    .row4 {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .reset {
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        font-weight: 500;
+        border: none;
+        border-radius: 5px;
+        height: 40px;
+        width: 40px;
+        background-color: rgb(192, 115, 255);
+    }
+}
