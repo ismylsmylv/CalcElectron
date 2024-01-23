@@ -2,6 +2,9 @@
   "name": "calculator",
   "private": true,
   "version": "1.0.0",
+  "description": "Simple Calculator with React Vite, Electron JS",
+  "author": "ismylsmylv",
+  "icon": "path/to/your/icon.png",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build && electron-builder",
