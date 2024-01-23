@@ -1,23 +1,19 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/electron-vite.animate.svg";
-import Navbar from "./components/Navbar/index.jsx";
-import { useAppSelector, useAppDispatch } from "./redux/hooks.js";
 import "./App.scss";
+import { useAppDispatch, useAppSelector } from "./redux/hooks.js";
 import {
-  getNumber,
   addition,
-  subtraction,
-  result,
-  multiplication,
   division,
+  getNumber,
+  multiplication,
   reset,
+  result,
+  subtraction,
 } from "./redux/slice.js";
 
 function App() {
   const value = useAppSelector((state) => state.calc.value);
   const number = useAppSelector((state) => state.calc.number);
-  const number2 = useAppSelector((state) => state.calc.number2);
+  // const number2 = useAppSelector((state) => state.calc.number2);
   const type = useAppSelector((state) => state.calc.type);
   const dispatch = useAppDispatch();
   console.log(value);
